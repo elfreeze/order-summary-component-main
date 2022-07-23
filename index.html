@@ -1,196 +1,206 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,500;0,700;0,900;1,500;1,700;1,900&display=swap" rel="stylesheet">
-  
-  <title>Frontend Mentor | Order summary card</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,500;0,700;0,900;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
 
+    <title>Frontend Mentor | Order summary card</title>
 
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      text-decoration: none;
-      font-family: 'Red Hat Display', sans-serif;
-    }
-    body {
-      background: url(/images/pattern-background-desktop.svg), hsl(225, 100%, 94%);
-      background-position: center;
-      background-size: cover;
-      background-repeat: no-repeat;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-    }
-    .container {
-      height: auto;
-      width: auto;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      margin: 50px auto;
-      background: #fff;
-      border-radius: 10px;
-    }
-    .img-container {
-      height: 200px;
-      width: 400px;
-      background: url(/images/illustration-hero.svg);
-      background-position: center;
-      background-repeat: no-repeat;
-      background-size: cover;
-      border-top-left-radius: 10px;
-      border-top-right-radius: 10px;
-    }
-    .text-container {
-      height: 350px;
-      width: 400px;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: space-between;
-      padding: 30px 50px;
-    }
-    .text-container > h1 {
-      font-size: 30px;
-      font-weight: 900;
-    }
-    .text-container > p {
-      color: hsl(224, 23%, 55%);
-      text-align: center;
-      font-size: 16px;
-      font-weight: 500;
-      line-height: 1.5;
-    }
-    .price-container {
-      display: flex;
-      align-items: center;
-      padding: 0 20px;
-      width: 300px;
-      height: 70px;
-      background: hsl(240, 11%, 96%);
-      border-radius: 10px;
-    }
-    .price-container > a {
-      text-decoration: underline;
-      color: hsl(253, 69%, 41%);
-      font-weight: 700;
-      width: 70px;
-      display: grid;
-      place-items: center;
-    }
-    .price-container > a:hover {
-      font-size: 17px;
-    }
-    .plan-container {
-      width: 130px;
-      height: auto;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: left;
-      margin-left: 10px;
-    }
-    .plan-container h3 {
-      font-size: 16px;
-      font-weight: 700;
-    }
-    .plan-container p {
-      width: 180px;
-      margin: 0 auto;
-      color: hsl(224, 23%, 55%);
-    }
-    .btn {
-      font-size: 16px;
-    }
-    .btn1 {
-      background: hsl(245, 75%, 52%);
-      width: 300px;
-      height: 35px;
-      display: grid;
-      place-items: center;
-      color: #fff;
-      border-radius: 10px;
-      margin-top: 15px;
-    }
-    .btn1:hover {
-      width: 305px;
-      height: 37px;
-    }
-    .btn2 {
-      color: hsl(224, 23%, 55%);
-      width: 300px;
-      height: 35px;
-      display: grid;
-      place-items: center;
-      border-radius: 10px;
-    }
-    .btn2:hover {
-      color: hsl(253, 69%, 41%);
-      font-size: 17px;
-    }
-    .attribution { 
-      font-size: 11px; text-align: center; 
-      margin-bottom: 50px;
-    }
-    .attribution a { 
-      color: hsl(228, 93%, 17%); 
-    }
-    @media only screen and (max-width: 480px) {
-    .container {
-      margin: 30px auto;
-    }
-    .img-container {
-      height: 150px;
-      width: 350px;
-    }
-    .text-container {
-      height: 400px;
-      width: 350px;
-      padding: 30px 18px;
-    }
-    }
-  </style>
-</head>
-<body>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        text-decoration: none;
+        font-family: 'Red Hat Display', sans-serif;
+      }
+      body {
+        background: url(/images/pattern-background-desktop.svg),
+          hsl(225, 100%, 94%);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+      }
+      .container {
+        height: auto;
+        width: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 50px auto;
+        background: #fff;
+        border-radius: 10px;
+      }
+      .img-container {
+        height: 200px;
+        width: 400px;
+        background: url(/images/illustration-hero.svg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+      }
+      .text-container {
+        height: 350px;
+        width: 400px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        padding: 30px 50px;
+      }
+      .text-container > h1 {
+        font-size: 30px;
+        font-weight: 900;
+      }
+      .text-container > p {
+        color: hsl(224, 23%, 55%);
+        text-align: center;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 1.5;
+      }
+      .price-container {
+        display: flex;
+        align-items: center;
+        padding: 0 20px;
+        width: 300px;
+        height: 70px;
+        background: hsl(240, 11%, 96%);
+        border-radius: 10px;
+      }
+      .price-container > a {
+        text-decoration: underline;
+        color: hsl(253, 69%, 41%);
+        font-weight: 700;
+        width: 70px;
+        display: grid;
+        place-items: center;
+      }
+      .price-container > a:hover {
+        font-size: 17px;
+      }
+      .plan-container {
+        width: 130px;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: left;
+        margin-left: 10px;
+      }
+      .plan-container h3 {
+        font-size: 16px;
+        font-weight: 700;
+      }
+      .plan-container p {
+        width: 180px;
+        margin: 0 auto;
+        color: hsl(224, 23%, 55%);
+      }
+      .btn {
+        font-size: 16px;
+      }
+      .btn1 {
+        background: hsl(245, 75%, 52%);
+        width: 300px;
+        height: 35px;
+        display: grid;
+        place-items: center;
+        color: #fff;
+        border-radius: 10px;
+        margin-top: 15px;
+      }
+      .btn1:hover {
+        width: 305px;
+        height: 37px;
+      }
+      .btn2 {
+        color: hsl(224, 23%, 55%);
+        width: 300px;
+        height: 35px;
+        display: grid;
+        place-items: center;
+        border-radius: 10px;
+      }
+      .btn2:hover {
+        color: hsl(253, 69%, 41%);
+        font-size: 17px;
+      }
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+        margin-bottom: 50px;
+      }
+      .attribution a {
+        color: hsl(228, 93%, 17%);
+      }
+      @media only screen and (max-width: 480px) {
+        .container {
+          margin: 30px auto;
+        }
+        .img-container {
+          height: 150px;
+          width: 300px;
+        }
+        .text-container {
+          height: 400px;
+          width: 300px;
+          padding: 30px 18px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="img-container"></div>
 
-  <div class="container">
-    <div class="img-container"></div>
-       
-    <div class="text-container">
-      <h1 class="order-head">Order Summary</h1>
-      <p>
-      You can now listen to millions of songs, audiobooks, and podcasts on any device anywhere you like!
-      </p>
+      <div class="text-container">
+        <h1 class="order-head">Order Summary</h1>
+        <p>
+          You can now listen to millions of songs, audiobooks, and podcasts on
+          any device anywhere you like!
+        </p>
 
-    
-      <div class="price-container">
-        <img src="/images/icon-music.svg" alt="">
-        <div class="plan-container">
-          <h3>Annual Plan</h3>
-          <p>$59.99/year</p>
+        <div class="price-container">
+          <img src="/images/icon-music.svg" alt="" />
+          <div class="plan-container">
+            <h3>Annual Plan</h3>
+            <p>$59.99/year</p>
+          </div>
+          <a href="" class="btn btn3">Change</a>
         </div>
-        <a href="" class="btn btn3">Change</a>
+
+        <a href="" class="btn btn1">Proceed to Payment</a>
+        <a href="" class="btn btn2">Cancel Order</a>
       </div>
-      
-
-      <a href="" class="btn btn1">Proceed to Payment</a>
-      <a href="" class="btn btn2">Cancel Order</a>
     </div>
-  </div>
 
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="https://hafeez.netlify.app/" target="_blank">Hafeez Abdallah</a>.
-  </div>
-</body>
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by
+      <a href="https://hafeez.netlify.app/" target="_blank">Hafeez Abdallah</a>.
+    </div>
+  </body>
 </html>
