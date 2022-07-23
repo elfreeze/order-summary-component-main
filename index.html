@@ -97,7 +97,7 @@
         place-items: center;
       }
       .price-container > a:hover {
-        font-size: 17px;
+        color: hsl(245, 75%, 65%);
       }
       .plan-container {
         width: 130px;
@@ -131,8 +131,7 @@
         margin-top: 15px;
       }
       .btn1:hover {
-        width: 305px;
-        height: 37px;
+        background: hsl(245, 75%, 65%);
       }
       .btn2 {
         color: hsl(224, 23%, 55%);
@@ -143,8 +142,7 @@
         border-radius: 10px;
       }
       .btn2:hover {
-        color: hsl(253, 69%, 41%);
-        font-size: 17px;
+        color: #000;
       }
       .attribution {
         font-size: 11px;
@@ -157,6 +155,8 @@
       @media only screen and (max-width: 480px) {
         .container {
           margin: 30px auto;
+          max-width: 300px;
+          max-height 600px;
         }
         .img-container {
           height: 150px;
@@ -164,8 +164,17 @@
         }
         .text-container {
           height: 400px;
-          width: 350px;
+          width: 300px;
           padding: 30px 18px;
+        }
+        .price-container {
+          width: 250px;
+        }
+        .btn1 {
+          width: 250px;
+        }
+        .btn2 {
+          width: 250px;
         }
       }
     </style>
