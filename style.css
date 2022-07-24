@@ -28,7 +28,7 @@ body {
   border-radius: 10px;
   box-shadow: 0px 10px 5px -2px #d0d8dd;;
 }
-header {
+.img-container {
   height: 200px;
   width: 400px;
   background: url(/images/illustration-hero.svg);
