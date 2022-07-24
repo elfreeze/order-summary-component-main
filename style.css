@@ -28,7 +28,7 @@ body {
   border-radius: 10px;
   box-shadow: 0px 10px 5px -2px #d0d8dd;;
 }
-.img-container {
+header {
   height: 200px;
   width: 400px;
   background: url(/images/illustration-hero.svg);
@@ -87,7 +87,7 @@ body {
   align-items: left;
   margin-left: 10px;
 }
-.plan-container h3 {
+.plan-container h2 {
   font-size: 16px;
   font-weight: 700;
 }
