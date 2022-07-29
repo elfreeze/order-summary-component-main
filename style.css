@@ -4,13 +4,6 @@
   box-sizing: border-box;
   font-family: 'Red Hat Display', sans-serif;
 }
-
-.none {
-  color:  hsl(225, 100%, 94%)hsl(245, 75%, 52%)hsl(225, 100%, 98%)hsl(224, 23%, 55%)
-hsl(223, 47%, 23%)
-}
-
-
 body {
   background: url(/images/pattern-background-desktop.svg),
     hsl(225, 100%, 94%);
@@ -171,7 +164,6 @@ body {
   }
   .price-container {
     width: 250px;
-
   }
   .plan-container {
     margin-left: 5px;
